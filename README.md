@@ -1,2 +1,2 @@
 # Sofia-Traffic-HA
-Virtual tables 
+Virtual tables for Arrival times of public transport vehicles
