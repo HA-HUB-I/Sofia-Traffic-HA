@@ -4,6 +4,8 @@ Virtual tables for Arrival times of public transport vehicles<br>
 > /search_all?term=22 <br>
 > /lines/stops/geo?line_id=389
 > <br>
+>/transports/json <br>
+> /lines/json/<br>
 > /virtual_panel?stop_id=1714 
 <h1>Table of contents</h1><br>
 Installation | Configuration | Full example | Help | Contribution
