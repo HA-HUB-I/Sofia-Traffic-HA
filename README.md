@@ -1,13 +1,13 @@
 # Sofia-Traffic-HA
 Virtual tables for Arrival times of public transport vehicles<br>
-Table of contents<br>
+<h1>Table of contents<h1><br>
 Installation | Configuration | Full example | Help | Contribution
 <br><br>
-Screenshots and features
+<h1>Screenshots and features<h1>
 <br>
 
-Installation
+<h1>Installation<h1>
 <br>
 
-Configuration
+<h1>Configuration<h1>
 
