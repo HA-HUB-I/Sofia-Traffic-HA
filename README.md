@@ -16,4 +16,4 @@ Installation | Configuration | Full example | Help | Contribution
 <h1>Configuration<h1>
   <br>
 <h1>Help<h1>
-[JsonPathFinder]([https://jsonpathfinder.com/]
+[JsonPathFinder](https://jsonpathfinder.com/)
