@@ -1,6 +1,6 @@
 # Sofia-Traffic-HA
 Virtual tables for Arrival times of public transport vehicles<br>
-> get results
+> get results <br>
 > search_all?term=22
 > <br>
 > virtual_panel?stop_id=1714 
