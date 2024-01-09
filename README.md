@@ -2,6 +2,7 @@
 Virtual tables for Arrival times of public transport vehicles<br>
 > get results
 > search_all?term=22
+ <br>
 > virtual_panel?stop_id=1714 
 <h1>Table of contents<h1><br>
 Installation | Configuration | Full example | Help | Contribution
