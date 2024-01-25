@@ -8,7 +8,8 @@ Virtual tables for Arrival times of public transport vehicles<br> HOME ASSISTANT
 > <br>
 >/transports/json <br>
 > /lines/json/<br>
-> /virtual_panel?stop_id=1714 
+> /virtual_panel?stop_id=1714 <br>
+https://routes.st.bg/resources/stops-bg/en.json
 <h1>Table of contents</h1><br>
 Installation | Configuration | Full example | Help | Contribution
 <br><br>
