@@ -1,0 +1,51 @@
+
+alias: departure_time
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - sensor.tm22
+    attribute: departure_time
+condition:
+  - condition: or
+    conditions:
+      - condition: time
+        after: "07:50:00"
+        before: "08:40:00"
+        weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+    enabled: false
+  - condition: time
+    after: "07:50:00"
+    before: "08:40:00"
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+action:
+  - service: notify.telegramnotify
+    data:
+      message: >-
+        🆕 🚉  **{{ state_attr('sensor.tm22' , 'departure_time') }}** {{
+        ((now().hour * 60) + now().minute) - 
+
+        ((strptime(states('sensor.tm22'), '%H:%M').hour * 60) +
+
+        strptime(states('sensor.tm22'), '%H:%M').minute) }} минути  
+
+        🔜 🚆 **{{state_attr('sensor.tm222' , 'departure_time') }}** {{
+        ((now().hour * 60) +
+
+        now().minute) - ((strptime(states('sensor.tm222'), '%H:%M').hour * 60) +
+
+        strptime(states('sensor.tm222'), '%H:%M').minute) }} минути
+      title: TM22
+      data:
+        keyboard: /tm22
+mode: single
