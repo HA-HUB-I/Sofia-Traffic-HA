@@ -22,6 +22,13 @@ Installation | Configuration | Full example | Help | Contribution
 
 <h1>Installation<h1>
 <br>
+  <summary> Оставащи минути до пристигане 
+  <details>
+ **{{ state_attr('sensor.tm22' , 'departure_time') }}** {{
+        ((now().hour * 60) + now().minute) - 
+        ((strptime(states('sensor.tm22'), '%H:%M').hour * 60) +
+        strptime(states('sensor.tm22'), '%H:%M').minute) }} минути  
+    
 
 <h1>Configuration</h1>
   <br>
