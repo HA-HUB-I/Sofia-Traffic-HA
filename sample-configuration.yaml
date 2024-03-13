@@ -1,0 +1,36 @@
+
+# Loads default set of integrations. Do not remove.
+#default_config:
+
+# Load frontend themes from the themes folder
+#frontend:
+#  themes: !include_dir_merge_named themes
+
+#automation: !include automations.yaml
+#script: !include scripts.yaml
+#scene: !include scenes.yaml
+#multiscrapе: !include multiscrape.yaml
+#Stop_id = не е ID спирка 
+# ID спирка се намира в json полето #
+#"virtual_panel_data": {
+#        "id": 1605,
+rest:
+  - resource: https://www.sofiatraffic.bg/interactivecard/virtual_panel?stop_id=1714 # Автобус 120 спирка НПМГ Акад. Л.Чакалов
+  - resource: https://www.sofiatraffic.bg/interactivecard/virtual_panel?stop_id=1457 # TM22 
+    scan_interval: 60
+    sensor:
+      - name: "TM22"
+        #value_template: '{{ value_json.departure_time }}'
+        value_template: "{{ value_json.virtual_panel_data.lines[0].cars[0].departure_time }}"
+        #json_attributes_path: "$.virtual_panel_data.lines[0].cars[0]"
+        json_attributes_path: "$.virtual_panel_data.lines[0].cars[0]"
+        json_attributes:
+         - departure_time
+         - "flags"
+         
+      - name: "TM222"
+        value_template: "{{ value_json.virtual_panel_data.lines[0].cars[1].departure_time }}"
+        json_attributes_path: "$.virtual_panel_data.lines[0].cars[1]"
+        json_attributes:
+         - departure_time
+         - "flags"
