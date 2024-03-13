@@ -1,0 +1,7 @@
+#Stop_id = не е ID спирка 
+# ID спирка се намира в json полето #
+#"virtual_panel_data": {
+#        "id": 1605,
+rest:
+  - resource: https://www.sofiatraffic.bg/interactivecard/virtual_panel?stop_id=1714 # Автобус 120 спирка НПМГ Акад. Л.Чакалов
+  - resource: https://www.sofiatraffic.bg/interactivecard/virtual_panel?stop_id=1457 # TM22 
