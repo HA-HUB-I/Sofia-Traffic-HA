@@ -5,3 +5,14 @@
 rest:
   - resource: https://www.sofiatraffic.bg/interactivecard/virtual_panel?stop_id=1714 # Автобус 120 спирка НПМГ Акад. Л.Чакалов
   - resource: https://www.sofiatraffic.bg/interactivecard/virtual_panel?stop_id=1457 # TM22 
+
+Flags Съдържа информация за колата 
+
+disabled: false # Ако е True е спряно от движение
+klimatik: false # True има наличен климатик
+bicycle_rack: false # True има налична стойка за колела
+doubledecker: false # True подходяжо за инвалиди 
+by_timetable: false # ?
+
+departure_time времето за пристигане 
+
