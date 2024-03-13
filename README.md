@@ -1,6 +1,9 @@
 # Sofia-Traffic-HA
 Virtual tables for Arrival times of public transport vehicles<br> HOME ASSISTANT
-![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
+[![telegram_badge]][telegram_link]
+
+[telegram_badge]: https://img.shields.io/badge/telegram-❤️-252850?style=plastic&logo=telegram
+[telegram_link]: https://t.me/+AkGV73kZi_Q1YTMy
 
 > get results via RESTful json parse  <br>
 > /search_all?term=22 <br>
