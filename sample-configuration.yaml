@@ -21,16 +21,16 @@ rest:
     sensor:
       - name: "TM22"
         #value_template: '{{ value_json.departure_time }}'
-        value_template: "{{ value_json.virtual_panel_data.lines[0].cars[0].departure_time }}"
+        value_template: "{{ value_json.virtual_panel_data.lines[0].cars[0].departure_time }}" # По подразбиране за карта
         #json_attributes_path: "$.virtual_panel_data.lines[0].cars[0]"
-        json_attributes_path: "$.virtual_panel_data.lines[0].cars[0]"
+        json_attributes_path: "$.virtual_panel_data.lines[0].cars[0]" #път към инфо атрибути за първата кола
         json_attributes:
          - departure_time
          - "flags"
          
       - name: "TM222"
         value_template: "{{ value_json.virtual_panel_data.lines[0].cars[1].departure_time }}"
-        json_attributes_path: "$.virtual_panel_data.lines[0].cars[1]"
+        json_attributes_path: "$.virtual_panel_data.lines[0].cars[1]" #път към инфо атрибути за втората кола
         json_attributes:
          - departure_time
          - "flags"
